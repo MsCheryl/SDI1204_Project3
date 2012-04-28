@@ -100,3 +100,17 @@ var gasThere = {
 
         }
 
+
+
+// Return Array
+
+function interest() {
+    var myInterest = [];
+    	myInterest[0] = "Psychology";
+    	myInterest[1] = "Early Childhood Education";
+    	myInterest[2] = "Child Psychology";
+
+    return myInterest.join(); 
+}
+
+
