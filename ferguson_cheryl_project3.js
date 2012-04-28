@@ -85,7 +85,7 @@ var gasThere = {
                     console.log("We only have"+" "+ this.gasMoney +" " + " allocated to fill up.");
                 }
             } else {
-                console.log(json.gas[i].station + "is a reasonable station to fill up." + );
+                console.log(json.gas[i].station + "is a reasonable station to fill up.");
             }
             var theGas = json.gas[i];
             var perTrip = theGas.pricePerGallon * this.hoursAway;
@@ -139,3 +139,26 @@ var closeFriends = {
 };
 
 
+/*Calling all functions*/
+
+// 1
+welcomeDays.myCountdown("begin");
+
+//2
+if (idealSchool.goodToGo(400,6000)) {
+    console.log("Yes! I am glad we found the one.");
+} else {
+    console.log("Back to the drawing board.");
+};
+
+// 3
+var currentStatus = kids.graduated(idealSchools.publicSchools);
+console.log("I have " + currentStatus + " college students!");
+
+//4
+
+var ourChoices = gasThere.gasOptions(json2);
+console.log("Their interests include:"+ " "+interest()+" "+",and Mass Communication."); 
+
+//5
+closeFriends.bestFriends(json);
