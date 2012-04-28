@@ -85,7 +85,7 @@ var gasThere = {
                     console.log("We only have"+" "+ this.gasMoney +" " + " allocated to fill up.");
                 }
             } else {
-                console.log("This station is reasonable " + json.gas[i].station);
+                console.log(json.gas[i].station + "is a reasonable station to fill up." + );
             }
             var theGas = json.gas[i];
             var perTrip = theGas.pricePerGallon * this.hoursAway;
@@ -113,5 +113,29 @@ function interest() {
 
     return myInterest.join(); 
 }
+
+//Object from json file ~5
+
+var closeFriends = {
+    bestFriends: function (json) {
+        console.log("All of my friends are going to college.");
+
+        for (var key in json.friends) {
+            var friend = json.friends[key];
+            console.log(friend.name + ": " + friend.type + ", age:" + friend.age);
+        }
+
+        var endFall = function () {
+                var endSemester = {
+                    "breakTime": "Winter Break"
+            
+                };
+                console.log("The semester is over!");
+                return endSemester;
+            };
+
+        console.log("Yes! It's " + endFall().breakTime + " gives me time to rest!")
+    }
+};
 
 
