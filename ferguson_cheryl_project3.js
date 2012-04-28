@@ -99,7 +99,8 @@ var gasThere = {
             }
 
         }
-
+    }
+};
 
 
 // Return Array
